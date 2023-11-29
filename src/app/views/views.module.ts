@@ -6,13 +6,15 @@ import { ViewsHomeComponent } from './views-home/views-home.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { SharedModule } from '../shared/shared.module';
 import { ListComponent } from './list/list.component';
+import { ModsHomeComponent } from './mods-home/mods-home.component';
 
 
 @NgModule({
   declarations: [
     ViewsHomeComponent,
     StatisticsComponent,
-    ListComponent
+    ListComponent,
+    ModsHomeComponent
   ],
   imports: [
     CommonModule,
