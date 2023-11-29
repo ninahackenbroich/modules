@@ -1,0 +1,13 @@
+<div class="ui styled fluid accordion">
+  <ng-container *ngFor="let q of questions; let i = index">
+    <div class="title" (click)="onClick(i)" [ngClass]="{ active: i === opendIndex }">
+      <i class="dropdown icon"></i>
+      {{ q.question }}
+    </div>
+    <div class="content" [ngClass]="{ active: i === opendIndex }">
+      <p>
+        {{ q.answer }}
+      </p>
+    </div>
+  </ng-container>
+</div>
